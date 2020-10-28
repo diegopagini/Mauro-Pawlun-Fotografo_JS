@@ -1,0 +1,57 @@
+:root {
+  --main-color: #282828;
+  --black: #000000;
+  --secondary-color: #ffffff;
+  --primary-font: 'Lato', sans-serif;;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+img {
+  width: 100%;
+}
+
+.nav-wrapper{
+  background-color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.first {
+  height: 90vh;
+  background-image: url('./assets/photos/fondo1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.second {
+  height: 90vh;
+  background-image: url('./assets/photos/fondo2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.page-footer {
+  background-color: var(--black);
+  height: 20vh;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container img {
+  margin: 20px;
+  color: white;
+  width: 35px;
+  height: 35px;
+  background-color: var(--secondary-color);
+}
+
+.icon-container img:hover {
+  cursor: pointer;
+}

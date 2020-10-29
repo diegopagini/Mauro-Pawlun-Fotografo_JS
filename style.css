@@ -57,3 +57,20 @@ img {
 .icon-container img:hover {
   cursor: pointer;
 }
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+@media screen and (max-width: 465px) {
+  #MauroPawlun {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #MauroPawlun {
+    font-size: 18px;
+  }
+}

@@ -58,6 +58,37 @@ img {
   cursor: pointer;
 }
 
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-rows: repeat(auto-fill, 450px);
+  grid-gap: 5px;
+  justify-content: center;
+}
+
+.item {
+  border-radius: 5px;
+  padding: 10px;
+  background: #f2f2f2;
+}
+
+.item img {
+  max-width: 100%
+}
+
+.level-1 {
+  grid-column-end: span 3;
+  grid-row-end: span 3;
+}
+
+.level-2 {
+  grid-column-end: span 2;
+}
+
+.level-3 {
+  grid-column-end: span 1;
+}
+
 footer {
   position: relative;
   bottom: 0;
@@ -72,5 +103,17 @@ footer {
 @media screen and (max-width: 321px) {
   #MauroPawlun {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) { 
+  #galeria {
+      columns:2;
+  }
+}
+
+@media (max-width: 480px) {
+  #galeria {
+      columns: 1;
   }
 }
